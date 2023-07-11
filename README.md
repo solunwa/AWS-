@@ -1,5 +1,5 @@
 #AWS-
-Attaching and mounting EBS volumes:
+Attaching and mounting EBS/NFS/EFS volumes:
 ====================================
 Your ebs volume created an the ec2 created must be in the same availbilty zone AZ
 for you to be able to mount the ebs voln

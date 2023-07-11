@@ -1,6 +1,6 @@
 Attaching and mounting EBS volumes:
 ====================================
-Your ebs volume creayed an the ec2 created must be in the same availbilty zone AZ
+Your ebs volume created an the ec2 created must be in the same availbilty zone AZ
 for you to be able to mount the ebs voln
 
 [ec2-user@ip-10-0-0-23 ~]$ history

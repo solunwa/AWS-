@@ -1,3 +1,4 @@
+#AWS-
 Attaching and mounting EBS volumes:
 ====================================
 Your ebs volume created an the ec2 created must be in the same availbilty zone AZ
@@ -18,18 +19,18 @@ for you to be able to mount the ebs voln
    12  clear
    
    13  lsblk  =    
-   14  sudo file -s /dev/xvdf (To check the status to know if the file is formated or not)
+   14  sudo file -s /dev/xvdf #(To check the status to know if the file is formated or not)
 
-   15  sudo mkfs -t xfs /dev/xvdf  (Make directory to create a file system)
+   15  sudo mkfs -t xfs /dev/xvdf  #(Make directory to create a file system)
    
    16  clear
-   17  sudo mkdir /data    (Create another mount point called data)
+   17  sudo mkdir /data    #(Create another mount point called data)
    18  la /app
    19  ls /app
    20  ls /data
    21  df -h
 
-   22  sudo mount /dev/xvdf /data  (mounting the created ebs volume on data directory)
+   22  sudo mount /dev/xvdf /data  #(mounting the created ebs volume on data directory)
    23  clear
    24  lsblk
    
@@ -39,7 +40,7 @@ for you to be able to mount the ebs voln
              reboot / 
              init 6  / 
              init 0 /  
-   28  sudo cp /etc/fstab /etc/fstab.orig   (This command is to save make the mounted ebs volume to stay after reboot ie to be permanent)
+   28  sudo cp /etc/fstab /etc/fstab.orig   #(This command is to save make the mounted ebs volume to stay after reboot ie to be permanent)
    29  history
 
 Volume expansion - vertical   [4gb-->7gb] 
@@ -87,4 +88,3 @@ remember that nfs port is : 2049
    sudo yum install nfs-utils
 sudo mkdir efs       
 sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0506f72fa378122f3.efs.us-east-1.amazonaws.com:/ efs
-# AWS-

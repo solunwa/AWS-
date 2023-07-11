@@ -1,5 +1,6 @@
 #AWS-
 Attaching and mounting EBS/NFS/EFS volumes:
+This gives information on the creation ebs and mounting them on servers, it also shows how to connect multiple network file system using efs
 ====================================
 Your ebs volume created an the ec2 created must be in the same availbilty zone AZ
 for you to be able to mount the ebs voln
